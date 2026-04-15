@@ -3,7 +3,8 @@ public:
     int reverse(int x) {
         long sum = 0;
         while(x){
-            sum = sum*10+(x%10);
+            int digit = x%10;
+            sum = sum*10+digit;
             x/=10;
          
         }
